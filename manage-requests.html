@@ -117,55 +117,16 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                Overview
+                Requests
               </li>
             </ol>
           </nav>
-          <h1 class="h2">Dashboard</h1>
-
-          <!-- summary -->
-          <div class="row my-4">
-            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <div class="card">
-                <div class="card-body">
-                  <h3 class="card-text">Total Requests</h3>
-                  <p class="card-text">5.6k</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <div class="card">
-                <div class="card-body">
-                  <h3 class="card-text">Closed Requests</h3>
-                  <p class="card-text">5.2k</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <div class="card">
-                <div class="card-body">
-                  <h3 class="card-text">Pending Requests</h3>
-                  <p class="card-text">256</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <div class="card">
-                <div class="card-body">
-                  <h3 class="card-text">Unassigned Requests</h3>
-                  <p class="card-text">215</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h1 class="h2">Requests</h1>
 
           <div class="row">
-            <div class="col-12 col-xl-8 mb-4 mb-lg-0">
+            <div class="">
               <div class="card">
-                <h5 class="card-header">Recent activities</h5>
+                <h5 class="card-header">Requests list</h5>
                 <div class="card-body">
                   <div class="table-responsive">
                     <table class="table">
@@ -174,7 +135,7 @@
                           <th scope="col">ID</th>
                           <th scope="col">Title</th>
                           <th scope="col">Customer</th>
-                          <!-- <th scope="col">Priority</th> -->
+                          <th scope="col">Status</th>
                           <th scope="col">Date</th>
                           <th scope="col"></th>
                         </tr>
@@ -184,6 +145,7 @@
                           <th scope="row">173717</th>
                           <td>Training Session Request</td>
                           <td>johndoe@gmail.com</td>
+                          <td><span class="btn btn-warning">Pending</span></td>
                           <td>March 14 2024</td>
                           <td>
                             <a href="#" class="btn btn-sm btn-primary">View</a>
@@ -193,6 +155,7 @@
                           <th scope="row">17370540</th>
                           <td>Software Update Request</td>
                           <td>jacob.monroe@email.com.com</td>
+                          <td><span class="btn btn-warning">Pending</span></td>
                           <td>March 14 2024</td>
                           <td>
                             <a href="#" class="btn btn-sm btn-primary">View</a>
@@ -202,6 +165,7 @@
                           <th scope="row">17371705</th>
                           <td>Network Connectivity Issue</td>
                           <td>johndoe@gmail.com</td>
+                          <td><span class="btn btn-success">In Progress</span></td>
                           <td>March 13 2024</td>
                           <td>
                             <a href="#" class="btn btn-sm btn-primary">View</a>
@@ -211,6 +175,7 @@
                           <th scope="row">17370540</th>
                           <td>Network Connectivity Issue</td>
                           <td>jacob.monroe@company.com</td>
+                          <td><span class="btn btn-secondary">Closed</span></td>
                           <td>March 13 2024</td>
                           <td>
                             <a href="#" class="btn btn-sm btn-primary">View</a>
@@ -220,6 +185,7 @@
                           <th scope="row">17370539</th>
                           <td>Network Connectivity Issue</td>
                           <td>jacob.monroe@company.com</td>
+                          <td><span class="btn btn-secondary">Closed</span></td>
                           <td>March 13 2024</td>
                           <td>
                             <a href="#" class="btn btn-sm btn-primary">View</a>
@@ -229,6 +195,7 @@
                           <th scope="row">17370538</th>
                           <td>Network Connectivity Issue</td>
                           <td>jacob.monroe@company.com</td>
+                          <td><span class="btn btn-secondary">Closed</span></td>
                           <td>March 13 2024</td>
                           <td>
                             <a href="#" class="btn btn-sm btn-primary">View</a>
@@ -238,14 +205,6 @@
                     </table>
                   </div>
                   <a href="#" class="btn btn-block btn-light">View all</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-xl-4">
-              <div class="card">
-                <h5 class="card-header">Requests for last 6 months</h5>
-                <div class="card-body">
-                  <div id="traffic-chart"></div>
                 </div>
               </div>
             </div>
@@ -282,7 +241,6 @@
     ></script>
     <!-- Chartist JS -->
     <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-    <!-- Custom JS -->
-    <script src="static/js/chart.js"></script>
+
   </body>
 </html>
