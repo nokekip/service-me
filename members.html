@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manage clients Page</title>
+    <title>Manage Members Page</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -86,13 +86,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link" href="manage-client.html">
                   <i class="fa-regular fa-user"></i>
                   <span class="ml-2">Clients</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="members.html">
+                <a class="nav-link active" aria-current="page" href="#">
                   <i class="fa-solid fa-user"></i>
                   <span class="ml-2">Members</span>
                 </a>
@@ -117,23 +117,23 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                Clients
+                Members
               </li>
             </ol>
           </nav>
-          <h1 class="h2">Manage Clients</h1>
+          <h1 class="h2">Manage Members</h1>
 
-          <!-- Add clients -->
+          <!-- Add Member -->
           <button
             type="button"
             class="btn btn-primary mb-3"
             data-bs-toggle="modal"
             data-bs-target="#addClientModal"
           >
-            Add Client
+            Add Member
           </button>
 
-          <!-- Add Client Modal -->
+          <!-- Add Member Modal -->
           <div
             class="modal fade"
             id="addClientModal"
@@ -145,7 +145,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="addClientModalLabel">
-                    Add Client
+                    Add Member
                   </h5>
                   <button
                     type="button"
@@ -155,7 +155,7 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <!-- Client Add Form -->
+                  <!-- Member Add Form -->
                   <form id="addClientForm">
                     <div class="mb-3">
                       <label for="fullName" class="form-label">Full Name</label>
@@ -223,7 +223,7 @@
                     form="addClientForm"
                     class="btn btn-primary"
                   >
-                    Add Client
+                    Add Member
                   </button>
                 </div>
               </div>
@@ -250,7 +250,7 @@
                       <th scope="row">8171</th>
                       <td>John Doe</td>
                       <td>johndoe@email.com</td>
-                      <td>Admin</td>
+                      <td>Member</td>
                       <td>
                         <button type="button" class="btn btn-sm btn-primary">
                           Update
@@ -264,7 +264,7 @@
                       <th scope="row">213</th>
                       <td>John Doe</td>
                       <td>johndoe@email.com</td>
-                      <td>Admin</td>
+                      <td>Member</td>
                       <td>
                         <button type="button" class="btn btn-sm btn-primary">
                           Update
@@ -278,7 +278,7 @@
                       <th scope="row">143</th>
                       <td>Denis Doe</td>
                       <td>denisdoe@gmail.com</td>
-                      <td>Clent</td>
+                      <td>Member</td>
                       <td>
                         <button type="button" class="btn btn-sm btn-primary">
                           Update
